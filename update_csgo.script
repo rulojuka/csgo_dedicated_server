@@ -1,0 +1,11 @@
+// update_csgo.script
+
+@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
+@NoPromptForPassword 1
+// Login without an account
+login anonymous
+// Set the app install directory.
+force_install_dir /home/steam/steamcmd
+// Install and validate the Counter Strike: Global Offensive dedicated server:
+app_update 740 validate
+quit
