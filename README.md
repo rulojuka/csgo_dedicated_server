@@ -16,26 +16,30 @@ Nice features to have:
 
 ## First Setup
 
+These steps should run on an Amazon EC2 instance.
+
 Install steamcmd and create steam user(run as root):
 ```
-root# add-apt-repository multiverse
-root# dpkg --add-architecture i386
-root# apt update
-root# apt install steamcmd # This opens an ncurses license agreement
-root# useradd -m steam -s /bin/bash
-root# mkdir <pathofvolume>/steamcmd
-root# chown steam <pathofvolume>/steamcmd
+sudo add-apt-repository multiverse
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install steamcmd # This opens an ncurses license agreement
+sudo useradd -m steam -s /bin/bash
+sudo echo "Enter path of storage device root: "
+sudo read -s STORAGE_DIR
+sudo mkdir $STORAGE_DIR/steamcmd
+sudo chown steam $STORAGE_DIR/steamcmd
 ```
 
 Change into `steam` user:
 ```
-root# su steam
+sudo su steam
 ```
 
 Clone this repository to `steam` home directory
 ```
-steam$ cd
-steam$ git clone https://github.com/rulojuka/csgo_dedicated_server.git
+cd
+git clone https://github.com/rulojuka/csgo_dedicated_server.git
 ```
 
 ## Run a dedicated server

@@ -1,2 +1,8 @@
 It all starts here:
 https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers
+
+Steam Game Server Account Management:
+https://steamcommunity.com/dev/managegameservers
+
+This may help with EC2 configuration:
+https://gist.github.com/pkazmierczak/07bcc42d829411dcb4f8525562567228

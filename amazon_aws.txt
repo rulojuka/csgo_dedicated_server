@@ -1,0 +1,9 @@
+Using
+  - Ubuntu Server 18.04 LTS (HVM), SSD Volume Type - ami-09f4cd7c0b533b081
+  - t2.medium
+  - /: 8 GB EBS (Elastic Block Storage) General purpose SSD (gp2)
+  - /mnt/hdexterno/: 25 GB EBS (Elastic Block Storage) General purpose SSD (gp2)
+
+name      vCPU  ECU   Memory (GiB)  Instance Storage (GB)   Linux/UNIX Usage
+c5.large  2     9     4 GiB         EBS Only                $0.131 per Hour
+Features: Enhanced networking: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html
