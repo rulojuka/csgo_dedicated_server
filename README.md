@@ -23,6 +23,8 @@ root# dpkg --add-architecture i386
 root# apt update
 root# apt install steamcmd # This opens an ncurses license agreement
 root# useradd -m steam -s /bin/bash
+root# mkdir <pathofvolume>/steamcmd
+root# chown steam <pathofvolume>/steamcmd
 ```
 
 Change into `steam` user:

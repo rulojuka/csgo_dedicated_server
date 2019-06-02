@@ -5,7 +5,7 @@
 // Login without an account
 login anonymous
 // Set the app install directory.
-force_install_dir /home/steam/steamcmd
+force_install_dir /mnt/volume_nyc3_01/steamcmd
 // Install and validate the Counter Strike: Global Offensive dedicated server:
 app_update 740 validate
 quit
